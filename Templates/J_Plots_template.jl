@@ -1,12 +1,17 @@
 
 using Plots, NCDatasets
 
+# import data 
+#
 dt = Dataset("data.nc", "r")
 
+# name data
+#
 x_var = dt["x"][:]
 y_var = dt["y"][:]
 
-
+# Plotting using plots
+#
 plot(x_var, y_var, 
 #	xscale=:log10, 
 #	yscale=:log10, 
@@ -22,3 +27,5 @@ plot(x_var, y_var,
 #	bottom_margin= 10Plots.mm,
 	gridstyle=:dash
 )
+
+savefig("plot.png")

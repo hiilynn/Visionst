@@ -7,9 +7,20 @@
 
 @font-face { font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal; } 
 
+@font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+ font-family: 'Roboto';
+ src: url(Roboto.woff2) format('woff2');
+}
 /* 全局属性 */
 :root{
-  --select-text-bg-color: #e49123;
+  --select-text-bg-color: #e88605;
 }
 ::selection {
 	background:#b981d1;
@@ -43,8 +54,8 @@ html {
 	max-width: 1000px;
 	font-size: 30px;
 	text-align: left;
-	letter-spacing: 2px;
-	font-family: 'Cafe24Oneprettynight';
+	letter-spacing: 1px;
+	font-family: 'NanumBarunpen';
 }
 
 html, body {
@@ -52,10 +63,10 @@ html, body {
 	margin-bottom: 2em;
 	line-height: 1.53;
 	padding-top: 40px;
-	background: #f7f5f2;
+	background: #fcfcfc;
 }
 body {
-	font-family: 'Cafe24Oneprettynight';
+	font-family: 'NanumBarunpen';
 	color: #5c46a3;
 	line-height: 1.7;
 	text-align: justify;
@@ -168,7 +179,7 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
   padding-left: 40px;
-  color: #9e9283;
+  color: #40372c;
 }
 #write ul {
   list-style-type: disc;
@@ -206,7 +217,7 @@ body {
   padding: 10px 10px 10px 20px;
   font-size: 0.9em;
   background: #f2eee9;
-  border-left: 3px solid #d8d7fa;
+  border-left: 3px solid #5e5448;
   color: #6a737d;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -216,6 +227,7 @@ body {
 }
 
 /* 超链接 */
+/*hyperlink*/
 #write a {
   text-decoration: none;
   font-weight: bold;
@@ -237,7 +249,7 @@ body {
 #write code{
   font-size: 14px;
   color:  rgb(235, 76, 55);
-  background-color: #f0f0f0;
+  background-color: #fcfcfc
 }
 
 /* 行内代码 */
@@ -323,10 +335,10 @@ code, .md-fences {
 }
 .md-fences {
   margin: 0 0 20px;
-  background-color: #5c5c5c;
-  color: rgb(236, 236, 236);
+  background-color: #ececec;
+  /*color: rgb(236, 236, 236);*/
 	/* font-size: 1em; */
-	padding: 0.3em 1em;
+  padding: 0.3em 1em;
   padding-top: 0.4em;
   box-shadow: 0px 4px 9px grey;
 }
@@ -336,6 +348,7 @@ code, .md-fences {
   background: transparent;
   background: rgba(151, 130, 184,0.5);  
   margin-left: 2px;
+  
   margin-right: 2px;
   /*border-left: 1px solid #c8b5e6;*/
   /*z-index: 5;*/
@@ -347,14 +360,14 @@ code, .md-fences {
   margin-left: 5px;
 }
 .cm-s-inner .cm-keyword {
-  color: #c792ea;
+  color: #7b4b9c;
   font-weight: 450;
 }
 .cm-s-inner .cm-operator {
-  color: #89ddff;
+  color: #036187;
 }
 .cm-s-inner .cm-variable-2 {
-  color: #eeffff;
+  color: #01144a;
 }
 .cm-s-inner .cm-variable-3,
 .cm-s-inner .cm-type {
@@ -373,7 +386,7 @@ code, .md-fences {
   color: #82aaff;
 }
 .cm-s-inner .cm-string {
-  color: #c3e88d;
+  color: #3e6901;
 }
 .cm-s-inner .cm-string-2 {
   color: #f07178;
@@ -397,14 +410,18 @@ code, .md-fences {
   color: #c792ea;
 }
 .cm-s-inner .cm-qualifier {
-  color: #decb6b;
+  color: #704201;
 }
 .cm-s-inner .cm-variable-3,
 .cm-s-inner .cm-type {
-  color: #decb6b;
+  color: #704201;
 }
 .cm-s-inner .cm-error {
   color: rgba(255, 255, 255, 1);
   background-color: #e9405c;
+}
+
+.math, .MathJax {
+    font-size: 20px; /* Adjust the value as needed */
 }
 
